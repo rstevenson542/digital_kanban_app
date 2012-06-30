@@ -1,6 +1,10 @@
-List of Projects:
+
+<h1><%= @project.name %></h1>
 <ul>
-<% @projects.each do |project| %>
-  <li><%= project.name %></li>
+<% @tickets.each do |ticket| %>
+  <li> 
+    <h3><%= link_to ticket.title, ticket_path(ticket) %></h3>
+    <p>State: <%= ticket.state %></p>
+  </li>
 <% end %>
 </ul>

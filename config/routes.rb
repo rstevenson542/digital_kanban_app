@@ -1,5 +1,9 @@
 DigitalKanbanApp::Application.routes.draw do
    root to: 'tickets#index'
+   
+   match 'tickets/:id' => 'tickets#show'
+   
+   resources :tickets
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
