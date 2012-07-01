@@ -4,7 +4,7 @@
 <% @tickets.each do |ticket| %>
   <li> 
     <h3><%= link_to ticket.title, ticket_path(ticket) %></h3>
-    <p>State: <%= ticket.state %></p>
+    <p>Status: <%= ticket.state %></p>
   </li>
 <% end %>
 </ul>
