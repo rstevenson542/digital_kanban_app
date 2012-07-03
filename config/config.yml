@@ -1,0 +1,5 @@
+# this file is optional in the dev and test environments.
+# See initializers/myconf.rb for defaults for dev and test
+account: t1dfirst
+token: fad70b09c02cf13c6bf307508cec2465d7eb3840
+project: 75196-myglu

@@ -1,15 +1,11 @@
 class TicketsController < ApplicationController
   
-  before_filter :lighthouse_auth, :project_resources
-  
   def index
-    
+    @tickets = @project.tickets 
   end
   
   def show
     @ticket = @project.tickets(params[:id])
   end
-  
-  
 
 end

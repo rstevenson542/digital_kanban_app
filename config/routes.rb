@@ -1,4 +1,5 @@
 DigitalKanbanApp::Application.routes.draw do
+  
    root to: 'tickets#index'
    
    match 'tickets/:id' => 'tickets#show'
